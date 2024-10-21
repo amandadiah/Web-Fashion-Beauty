@@ -1,0 +1,368 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #f4f4f4;
+    color: black;
+    padding-top: 30px;
+    min-height: 70px;
+   
+}
+
+header h1 {
+    float: left;
+    margin-top: 4px;
+    margin-left: 0px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background: #77aaff;
+}
+
+.banner {
+    background: url('5388eb745cc5da63a2ee5941a653b134.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    min-height: 200px; /* Atur tinggi minimum lebih besar */
+    padding: 150px 0; /* Tambah padding vertikal lebih besar */
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertikal centering konten */
+    justify-content: center; /* Horizontal centering konten */
+    width: 100%; /* Pastikan lebar banner penuh */
+    max-width: 100%; /* Jangan melebihi lebar layar */
+}
+
+.banner::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5); /* Tambah overlay semi-transparan */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.banner .container {
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Pastikan kontainer dalam banner juga penuh */
+    max-width: 100%; /* Jangan melebihi lebar layar */
+}
+.banner-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #77aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.banner-button:hover {
+    background: #5599ff;
+}
+
+
+
+.categories {
+    padding: 20px 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category {
+    flex: 1 1 200px;
+    margin: 15px;
+    text-align: center;
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category h3 {
+    margin-top: 10px;
+}
+
+.categories {
+    padding: 20px 0;
+    background: #f4f4f4;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.categories ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.blog, .about, .contact {
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+.fashion-blog {
+    padding: 40px 0;
+    background: #fff;
+    color: #333;
+}
+
+.fashion-blog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    max-height: 300px; /* Adjust this value to resize the image height */
+    object-fit: cover; /* Ensure the image covers the space while maintaining aspect ratio */
+    border-bottom: 1px solid #ddd;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-content h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.blog-content p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.blog-content a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-content a:hover {
+    text-decoration: underline;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input, .contact form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background: #77aaff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.about-us {
+    padding: 40px 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content img {
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text p {
+    text-align: justify;
+    line-height: 1.6;
+}
+.container h2 {
+    display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    background-color: rgb(32, 30, 30);
+}
+
+.footer-section h2 {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-section h2::after {
+    content: '';
+    width: 4rem;
+    height: .2rem;
+    background: #e65b00;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+.footer-section p {
+    transition: all .2s linear;
+    margin-bottom: .6em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-section p:hover {
+    transition: all .2s linear;
+    transform: translateX(4px);
+}
+
+.footer-section a:hover {
+    color: #f46d13;
+}
+
+.footer-item {
+    margin-right: 1rem;
+}
+
+.footer-item ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footer-item li {
+    margin-right: 1rem;
+}
+
+.social ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .2s linear;
+    
+
+}
+
+.social ul li:hover {
+    color: #e65b00;
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+
+@media screen and (max-width: 320px) {
+    .footer-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+}
+    
